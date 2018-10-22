@@ -5,7 +5,7 @@ authors = ["matt"]
 
 [dependencies]
 ssh2 = "0.3.3"
-clap = { features = ["yaml"] }
+clap = { version = "2.32.0", features = ["yaml"] }
 log = "0.4.5"
 env_logger = "0.5.13"
 
