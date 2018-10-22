@@ -1,0 +1,14 @@
+[package]
+name = "ssh_play"
+version = "0.1.0"
+authors = ["matt"]
+
+[dependencies]
+ssh2 = "0.3.3"
+clap = { features = ["yaml"] }
+log = "0.4.5"
+env_logger = "0.5.13"
+
+[[bin]]
+name = "ssh-cmd"
+path = "src/main.rs"

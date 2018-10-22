@@ -1,0 +1,26 @@
+name: ssh-cmd
+version: "0.1"
+author: geck <geck@lessthan3.net>
+about: Runs a command via SSH using ssh-agent for authentication, return it's output, exit with it's exit code.
+args:
+
+    - HOSTNAME:
+        help: Host to execute against
+        required: true
+        index: 1
+    - COMMAND:
+        help: The command to run
+        required: true
+        index: 2
+    - port:
+        short: p
+        long: port
+        value_name: port
+        help: Port to access sshd
+        takes_value: true
+    - user:
+        short: u
+        long: username
+        value_name: username
+        help: Username for authentication
+        takes_value: true
